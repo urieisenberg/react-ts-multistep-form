@@ -1,13 +1,36 @@
-body {
+.form-title {
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-wrapper {
+  display: grid;
+  gap: 1rem 0.5rem;
+  justify-content: flex-start;
+  grid-template-columns: auto minmax(auto, 400px);
+}
+
+.form {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 1rem;
+  font-family: arial, sans-serif;
+  max-width: max-content;
+  border-radius: 0.5rem;
+}
+
+.form-steps {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.form-step-button {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
 }
